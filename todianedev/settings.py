@@ -31,8 +31,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-todiane-blog-fsf-ugm2dkhpuj.us2.codeanyapp.com'
-                 'blog-fsf.herokuapp.com']
+ALLOWED_HOSTS = ['8000-todiane-blog-fsf-ugm2dkhpuj.us2.codeanyapp.com',
+                 os.environ.get('HEROKU_HOSTNAME'),]
 
 
 # Application definition

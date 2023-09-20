@@ -1,1 +1,1 @@
-web: gunicorn todianedev.wsgi
+web: gunicorn todianedev.wsgi:application
