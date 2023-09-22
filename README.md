@@ -1,37 +1,19 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![SnarkVerse Header](images/snarkheader.png)
 
-Welcome,
+## Snark Verse
 
-change thss
+A blog platform created using Django and Bootstrap.
 
-## Codeanywhere Reminders
+The site is deployed with Heroku. Live link is
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+<https://blog-fsf-1e72c6955bdf.herokuapp.com/>
 
-`python3 -m http.server`
+Images are hosted at Cloudinary
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+Database is hosted with ElephantSQL
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+At the time of creating this blog I have left off the comments section so the CRUD functionality hasn't been completed for users/readers.
 
-`http_server`
+I may add it at a later date but for now I am moving on to creating my own project 4 which is the next one due in.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+I will be using Django and Bootstrap again.
