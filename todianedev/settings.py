@@ -30,11 +30,12 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ALLOWED_HOSTS = ['8000-todiane-blog-fsf-ugm2dkhpuj.us2.codeanyapp.com',
+                 '8000-todiane-blogfsf-b5rl4u0nh1s.ws-eu107.gitpod.io',
                  os.environ.get('HEROKU_HOSTNAME'),]
 
 
@@ -94,9 +95,8 @@ WSGI_APPLICATION = 'todianedev.wsgi.application'
 #     }
 # }
 
-DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
-}
+
+DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
