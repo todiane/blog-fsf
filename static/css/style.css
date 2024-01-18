@@ -3,33 +3,15 @@
 General styles and blog
 ===========================*/
 
-  .container {
-      display: grid;
-      gap: 5px;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: 4fr;
-      grid-template-areas:
-        "header header"
-        "section content";
-  
+  .carousel-item {
+    background: #000000;
   }
 
 
-  
-  @media (max-width: 600px) {
-    .container {
-      grid-template-columns: 1fr; /* Change to a single column for screens with a width of 600 pixels or less */
-      grid-template-areas:
-        "header"
-        "sidebar"
-        "content"
-        "section";
-    }
-  }
 
 body {
     background-color: #F9FAFC;
-}
+  }
 
 .brand {
     font-family: Lato, sans-serif;
@@ -55,7 +37,7 @@ body {
 }
 
 .main-bg {
-    background-color: #F9FAFC;
+    background-color: #Fff;
 }
 
 .card {

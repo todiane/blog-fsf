@@ -4,57 +4,63 @@
 <html class="h-100">
 
 <head>
-    <title>Digital Commerce Developer - Diane Corriette</title>
+    {% block meta %}
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Digital Commerce Developer. Get help with your Shopify or eCommerce Store, eLearning Platform, WordPress or Django site.">
+    <meta name="keywords" content="Diane Corriette, digital commerce, web developer, uk web developer, front-end developer, ecommerce web developer, Corriette, todianedev">
+    <!-- Open Graph Meta Tags to ensure the site displays well on social media -->
+    <meta property="og:title" content="Diane Corriette @todianedev">
+    <meta property="og:description" content="Digital Commerce Developer. Get help with your Shopify or eCommerce Store, eLearning Platform, WordPress or Django site.">
+    <meta property="og:image" content="#">
+    <meta property="og:url" content="#"> <!--FILL THIS IN - LOOK AT POSTER PALACE FOR WHAT GOES HERE-->
+    {% endblock %}
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-        </script>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
-</head>
+{% block corecss %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">    
+    {% endblock %}
 
-<body class="d-flex flex-column h-100 main-bg">
+{% block extra_css %}
+{% endblock %}
 
-    <!-- Navigation -->
+{% block corejs %}
+    <script src="https://kit.fontawesome.com/cd7af72a7a.js" crossorigin="anonymous"></script>
+    <!-- Stripe -->
+    <script src="https://js.stripe.com/v3/"></script>
+{% endblock %}
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">Diane<span
-                        class="thin">| Corriette</span></span></span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'blog' %}">Blog</a>
-                    </li>
-                  
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">Register</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
-                    </li> -->
-                   
-                </ul>
-                <span class="navbar-text text-muted">
-                    Full-Stack Web Development. WordPress. Shopify.
-                </span>
-            </div>
-        </div>
-    </nav>
+{% block favicon %}
+<link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+<link rel="icon" type="image/png" sizes="192x192"
+href="{% static 'images/android-chrome-192x192.png' %}">
+<link rel="icon" type="image/png" sizes="512x512"
+href="{% static 'images/android-chrome-512x512.png' %}">
+<link rel="apple-touch-icon"
+sizes="180x180"
+href="{% static 'images/apple-touch-icon.png' %}">
+<link rel="icon"
+type="image/png"
+sizes="32x32"
+href="{% static 'images/favicon-32x32.png' %}">
+<link rel="icon"
+type="image/png"
+sizes="16x16"
+href="{% static 'images/favicon-16x16.png' %}">
+{% endblock %}
+
+<title>Digital Commerce Developer {% block extra_title %}{% endblock %}</title>
+</head> 
+<body>
+    <header class="container-fluid fixed-top"></header>
+    {% if messages %}
+        <div class="message-container"></div>
+    {% endif %}
+
+    {% block page_header %}
+    {% endblock %}
 
     <main class="flex-shrink-0 main-bg">
         {% block content %}
@@ -71,7 +77,23 @@
             <i class="fab fa-youtube-square ms-3"></i>
         </p>
     </footer>
-   
-</body>
 
+
+    {% block postloadjs %}
+    <!-- Script for Toast messages -->
+    <script type="text/javascript">
+      $('.toast').toast('show');
+    </script>
+    {% endblock %}
+
+
+    {% block extra_js %}
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    {% endblock %}
+
+
+</body>
 </html>
