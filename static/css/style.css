@@ -1,24 +1,118 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #545454;
+  font-family: 'Helvetica';
+  background-color: #fff;
+}
+
+h1,
+h2,
+h3, 
+h4,
+h5,
+h6 {
+    font-family: 'Helvetica', sans-serif;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 20px;
+    color:  #545454
+    
+}
+
+.logo-img {
+  max-height: 100px;
+}
+
+.icon {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  height: 1.5rem;
+  width: 1.5rem;
+  
+}
+
+.btn-black {
+  background: #006400;
+  color: white;
+}
+
+.btn-outline-black {
+  background: white;
+  color: #45526e !important; 
+  border: 1px solid #45526e;
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+  background: #45526e;
+  color: white !important;
+}
+
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+  background: #222;
+  color: white;
+}
+
+.text-black {
+  color: #545454 !important;
+}
+
+.border-black {
+  border: 1px solid black !important;
+}
+
+.bg-black {
+  background: #000 !important;
+}
+
+.btt-button {
+  height: 42px;
+  width: 42px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
+input[name='q']::placeholder {
+    color: #aab7c4;
+}
 
 /*===========================
 General styles and blog
 ===========================*/
 
-  .carousel-item {
-    background: #000000;
+.carousel-item {
+    background: #fff;
   }
 
-
-
-body {
-    background-color: #F9FAFC;
-  }
-
-.brand {
-    font-family: Lato, sans-serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #4A4A4F;
+.logo-font {
+    text-transform: uppercase;
 }
+
+.main-logo-link {
+    width: fit-content;
+}
+
+
+/* .header-container {
+  padding-top: 164px;
+} */
 
 .red-o {
     color: #E84610;
@@ -153,124 +247,6 @@ body {
 }
 
 
-/*===========================
-INDEX PAGE 
-===========================*/
-
-.single_portfolio {
-    position: relative;
-    width: 25%;
-  }
-  
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .single_portfolio {
-      width: 50%;
-    }
-  }
-  
-  @media (max-width: 767px) {
-    .single_portfolio {
-      width: 100%;
-    }
-  }
-  
-  @media only screen and (min-width: 576px) and (max-width: 767px) {
-    .single_portfolio {
-      width: 50%;
-    }
-  }
-  
-  .single_portfolio img {
-    width: 100%;
-  }
-  
-  .single_portfolio::before {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(141, 141, 141, 0.9);
-    opacity: 0;
-    transition: all 0.3s ease-out 0s;
-  }
-  
-  .single_portfolio .portfolio_content {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    transform: translateY(-50%);
-    text-align: center;
-  }
-  
-  .single_portfolio .portfolio_content .meta li {
-    display: inline-block;
-    margin: 0 5px;
-    transition: all 0.3s ease-out 0s;
-    opacity: 0;
-  }
-  
-  .single_portfolio .portfolio_content .meta li a {
-    width: 35px;
-    height: 35px;
-    line-height: 33px;
-    text-align: center;
-    font-size: 16px;
-    color: #fff;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    transition: all 0.3s ease-out 0s;
-  }
-  
-  .single_portfolio .portfolio_content .meta li a:hover {
-    background-color: #fff;
-    color: #EFEFEF;
-  }
-  
-  .single_portfolio .portfolio_content .meta li:first-child {
-    transform: translateX(-100%);
-  }
-  
-  .single_portfolio .portfolio_content .meta li:last-child {
-    transform: translateX(100%);
-  }
-  
-  .single_portfolio .portfolio_content .portfolio_title {
-    font-size: 24px;
-    font-weight: 600;
-    color: #fff;
-    margin-top: 25px;
-    transform: translateY(100%);
-    transition: all 0.3s ease-out 0s;
-    opacity: 0;
-  }
-  
-  @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .single_portfolio .portfolio_content .portfolio_title {
-      font-size: 20px;
-    }
-  }
-  
-  @media (max-width: 767px) {
-    .single_portfolio .portfolio_content .portfolio_title {
-      font-size: 20px;
-    }
-  }
-  
-  .single_portfolio:hover::before {
-    opacity: 1;
-  }
-  
-  .single_portfolio:hover .portfolio_content .meta li {
-    transform: translateX(0);
-    transition-delay: 0.2s;
-    opacity: 1;
-  }
-  
-  .single_portfolio:hover .portfolio_content .portfolio_title {
-    transform: translateX(0);
-    transition-delay: 0.2s;
-    opacity: 1;
-  }
+/* .header-container {
+        padding-top: 100px;
+    } */

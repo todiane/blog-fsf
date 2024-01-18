@@ -1,7 +1,7 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html class="h-100">
+
 
 <head>
     {% block meta %}
@@ -35,12 +35,12 @@
 {% block favicon %}
 <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
 <link rel="icon" type="image/png" sizes="192x192"
-href="{% static 'images/android-chrome-192x192.png' %}">
-<link rel="icon" type="image/png" sizes="512x512"
-href="{% static 'images/android-chrome-512x512.png' %}">
+href="{% static 'images/android-icon-192x192.png' %}">
+<link rel="icon" type="image/png" sizes="310x310"
+href="{% static 'images/ms-icon-310x310.png' %}">
 <link rel="apple-touch-icon"
 sizes="180x180"
-href="{% static 'images/apple-touch-icon.png' %}">
+href="{% static 'images/apple-icon.png' %}">
 <link rel="icon"
 type="image/png"
 sizes="32x32"
@@ -54,19 +54,48 @@ href="{% static 'images/favicon-16x16.png' %}">
 <title>Digital Commerce Developer {% block extra_title %}{% endblock %}</title>
 </head> 
 <body>
-    <header class="container-fluid fixed-top"></header>
-    {% if messages %}
-        <div class="message-container"></div>
-    {% endif %}
+    <header class="container-fluid">
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="{% url 'home' %}"><span class="logo-font">Diane <span
+                                class="thin">| Corriette</span></span></span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'blog' %}">Blog</a>
+                            </li>
+        
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="#">Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Login</a>
+                            </li> -->
+        
+                        </ul>
+                        <span class="navbar-text text-muted">
+                            Full-Stack Web Development. WordPress. Shopify.
+                        </span>
+                    </div>
+                </div>
+            </nav>
+    </header>
 
     {% block page_header %}
     {% endblock %}
-
-    <main class="flex-shrink-0 main-bg">
+  
         {% block content %}
         <!-- Content Goes here -->
         {% endblock content %}
-    </main>
+   
 
     <!-- Footer -->
     <footer class="footer mt-auto py-3 light-bg">
@@ -77,14 +106,6 @@ href="{% static 'images/favicon-16x16.png' %}">
             <i class="fab fa-youtube-square ms-3"></i>
         </p>
     </footer>
-
-
-    {% block postloadjs %}
-    <!-- Script for Toast messages -->
-    <script type="text/javascript">
-      $('.toast').toast('show');
-    </script>
-    {% endblock %}
 
 
     {% block extra_js %}
