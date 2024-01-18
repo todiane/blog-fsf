@@ -6,6 +6,12 @@ body {
   color: #545454;
   font-family: 'Helvetica';
   background-color: #fff;
+  padding-top: 120px;
+}
+
+.content-container {
+    /* Add any additional styling for your content container */
+    padding-top: 20px; /* Adjust the value based on your preference */
 }
 
 h1,
@@ -28,13 +34,61 @@ p {
   max-height: 100px;
 }
 
-.icon {
-  align-items: center;
-  display: inline-flex;
-  justify-content: center;
-  height: 1.5rem;
-  width: 1.5rem;
-  
+
+/*.......................................... Gallery on Template Two - Styles */
+
+.gallery-images {
+	padding: 5%;
+}
+.gallery-item {
+	position: relative;
+	box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.5);
+}
+/* overlay */
+
+.gallery-item img {
+	width: 100%;
+}
+.gallery-item .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.9);
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}
+
+.gallery-item:hover .overlay {
+	opacity: 1;
+}
+.gallery-item .overlay h3 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+.gallery-item .overlay p {
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.gallery-item .overlay .btn {
+	font-size: 16px;
+}
+.modal {
+	background: rgba(0, 0, 0, 0.8);
+}
+@media (max-width: 991px) {
+	.gallery-item {
+		margin-bottom: 30px;
+	}
 }
 
 .btn-black {
@@ -44,21 +98,21 @@ p {
 
 .btn-outline-black {
   background: white;
-  color: #45526e !important; 
-  border: 1px solid #45526e;
+  color: #006400 !important; 
+  border: 1px solid #006400;
 }
 
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-  background: #45526e;
+  background: #006400;
   color: white !important;
 }
 
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-  background: #222;
+  background: #006400;
   color: white;
 }
 
@@ -103,16 +157,13 @@ General styles and blog
 
 .logo-font {
     text-transform: uppercase;
+    font-size: 18px;
 }
 
 .main-logo-link {
     width: fit-content;
 }
 
-
-/* .header-container {
-  padding-top: 164px;
-} */
 
 .red-o {
     color: #E84610;

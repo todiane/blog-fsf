@@ -54,44 +54,55 @@ href="{% static 'images/favicon-16x16.png' %}">
 <title>Digital Commerce Developer {% block extra_title %}{% endblock %}</title>
 </head> 
 <body>
-    <header class="container-fluid">
-            <!-- Navigation -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="{% url 'home' %}"><span class="logo-font">Diane <span
-                                class="thin">| Corriette</span></span></span></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarText">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{% url 'blog' %}">Blog</a>
-                            </li>
-        
-                            <!-- <li class="nav-item">
-                                <a class="nav-link" href="#">Register</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Login</a>
-                            </li> -->
-        
-                        </ul>
-                        <span class="navbar-text text-muted">
-                            Full-Stack Web Development. WordPress. Shopify.
-                        </span>
+    <header class="container-fluid fixed-top px-5">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <a class="navbar-brand" href="{% url 'home' %}">
+                    <img src="{% static 'images/diane-corriette-digital-commerce-developer.png' %}" alt="Image of Diane Corriette logo" class="logo-img">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 logo-font">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'blog' %}">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                    </ul>
+                    <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+                        <form method="GET" action="#">
+                            <div class="input-group w-100">
+                                <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search my site">
+                                <div class="input-group-append">
+                                    <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+                                        <span class="icon">
+                                            <i class="fas fa-search"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
-            </nav>
+        </nav>
+        
     </header>
-
+    <div class="container">
+        <hr class="border border-secondary-emphasis border-2 opacity-75">
+    </div>
     {% block page_header %}
     {% endblock %}
-  
+
         {% block content %}
         <!-- Content Goes here -->
         {% endblock content %}
