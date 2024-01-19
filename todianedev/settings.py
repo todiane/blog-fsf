@@ -30,12 +30,12 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ALLOWED_HOSTS = ['8000-todiane-blogfsf-b5rl4u0nh1s.ws-eu107.gitpod.io',
-                 os.environ.get('HEROKU_HOSTNAME'),]
+                 'blog-fsf-1e72c6955bdf.herokuapp.com']
 
 # CSRF_TRUSTED
 
