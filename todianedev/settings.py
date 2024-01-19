@@ -34,10 +34,15 @@ DEBUG = True
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['8000-todiane-blog-fsf-ugm2dkhpuj.us2.codeanyapp.com',
-                 '8000-todiane-blogfsf-b5rl4u0nh1s.ws-eu107.gitpod.io',
+ALLOWED_HOSTS = ['8000-todiane-blogfsf-b5rl4u0nh1s.ws-eu107.gitpod.io',
                  os.environ.get('HEROKU_HOSTNAME'),]
 
+# CSRF_TRUSTED
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-todiane-blogfsf-b5rl4u0nh1s.ws-eu107.gitpod.io/',
+    'https://blog-fsf-1e72c6955bdf.herokuapp.com/',
+]
 
 # Application definition
 

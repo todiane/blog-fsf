@@ -1,12 +1,13 @@
-
+{% load static %}
 <!--====== PROJECT IMAGES WITH BUTTONS START ======-->
 <div class="gallery-images">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-sm-12">
                 <div class="gallery-item" data-bs-target="#popup2" data-bs-toggle="modal">
-                    <img alt="Image 1" src="static/images/posterpalace500.webp" class="img-fluid" alt="portfolio image" />
+                    <img alt="Image 1" src="{% static 'images/posterpalace500.webp' %}" class="img-fluid" alt="portfolio image" />
                     <div class="overlay">
+                       
                         <h3>eCommerce</h3>
                         <h3>Poster Palace Store</h3><a class="btn btn-outline-black" href="http://posterpalace-a7414f135cf3.herokuapp.com/" target="_blank" >Visit Here</a>
                     </div>
@@ -14,7 +15,7 @@
             </div>
             <div class="col-lg-4 col-sm-12">
                 <div class="gallery-item" data-bs-target="#popup3" data-bs-toggle="modal">
-                    <img alt="Image 1" src="static/images/penandi500.webp" class="img-fluid" alt="portfolio image" />
+                    <img alt="Image 1" src="{% static 'images/penandi500.webp' %}" class="img-fluid" alt="portfolio image" />
                     <div class="overlay">
                         <h3>Pen And I</h3>
                         <h3>Website & shop links</h3><a class="btn btn-outline-black" href="https://penandi-c4b324047655.herokuapp.com/" target="_blank">Visit Here</a>
@@ -23,7 +24,7 @@
             </div>
             <div class="col-lg-4 col-sm-12">
                 <div class="gallery-item" data-bs-target="#popup1" data-bs-toggle="modal">
-                    <img alt="Image 1" src="static/images/ourspot500.webp" class="img-fluid" alt="portfolio image" />
+                    <img alt="Image 1" src="{% static 'images/ourspot500.webp' %}" class="img-fluid" alt="portfolio image" />
                     <div class="overlay">
                         <h3>Our Spot</h3>
                         <h3>Social Media Network</h3><a class="btn btn-outline-black" href="http://ourspot-d2a3c52401dc.herokuapp.com/" target="_blank">Visit Here</a>
@@ -37,17 +38,17 @@
 <!-- Popup modals -->
 <div class="modal fade" id="popup1">
     <div class="modal-dialog">
-        <div class="modal-content"><img alt="Image 1" src="static/images/bright500.webp" ></div>
+        <div class="modal-content"><img alt="Image 1" src="{% static 'images/posterpalace500.webp' %}" ></div>
     </div>
 </div>
 <div class="modal fade" id="popup2">
     <div class="modal-dialog">
-        <div class="modal-content"><img alt="Image 2" src="static/images/love500.webp"></div>
+        <div class="modal-content"><img alt="Image 2" src="{% static 'images/penandi500.webp' %}"></div>
     </div>
 </div>
 <div class="modal fade" id="popup3">
     <div class="modal-dialog">
-        <div class="modal-content"><img alt="Image 3" src="static/images/purple500.webp"></div>
+        <div class="modal-content"><img alt="Image 3" src="{% static 'images/ourspot500.webp' %}"></div>
     </div>
 </div>
 <!--====== IMAGES WITH BUTTONS ENDS ======-->
