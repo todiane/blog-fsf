@@ -1,21 +1,13 @@
+/*.......................................... General Styles */
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   color: #545454;
-  font-family: 'Helvetica';
   background-color: #fff;
   
-}
-
-h1,
-h2,
-h3, 
-h4,
-h5,
-h6 {
-    font-family: 'Helvetica', sans-serif;
 }
 
 p {
@@ -25,9 +17,23 @@ p {
     
 }
 
+/*.......................................... Image & Text Logo */
+
 .logo-img {
   max-height: 100px;
 }
+
+.logo-font {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.main-logo-link {
+    width: fit-content;
+}
+
+
+/*.......................................... Navigation bar */
 
 .nav-link-custom:hover,
 .nav-link-custom.active {
@@ -35,13 +41,17 @@ p {
     color: white;
 }
 
+
+/*.......................................... Top slider */
+
 .slider {
     padding: 2%;
+    
 }
 
 
 
-/*.......................................... Gallery on Template Two - Styles */
+/*.......................................... Homepage portfolio */
 
 .gallery-images {
 	padding: 3%;
@@ -89,13 +99,16 @@ p {
 	font-size: 16px;
 }
 .modal {
-	background: rgba(0, 100, 0, 0.8);
+	background: rgba(0, 100, 0, 0.3);
 }
 @media (max-width: 991px) {
 	.gallery-item {
 		margin-bottom: 30px;
 	}
 }
+
+
+/*.......................................... Button Styles */
 
 .btn-black {
   background: #006400;
@@ -122,59 +135,16 @@ p {
   color: white;
 }
 
-.text-black {
-  color: #545454 !important;
-}
-
-.border-black {
-  border: 1px solid black !important;
-}
-
-.bg-black {
-  background: #000 !important;
-}
-
-.btt-button {
-  height: 42px;
-  width: 42px;
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-}
-
-
-.btt-link,
-.update-link,
-.remove-item {
-    cursor: pointer;
-}
+/*.......................................... Search bar Styles */
 
 input[name='q']::placeholder {
     color: #aab7c4;
 }
 
-/*===========================
-General styles and blog
-===========================*/
-
-
-
-.logo-font {
-    text-transform: uppercase;
-    font-size: 18px;
-}
-
-.main-logo-link {
-    width: fit-content;
-}
-
+/*.......................................... Styles for BLOG page */
 
 .red-o {
-    color: #E84610;
-}
-
-.thin {
-    font-weight: 300;
+    color: #006400;
 }
 
 .light-bg {
@@ -203,7 +173,7 @@ General styles and blog
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #23BBBB;
+    background-color: #006400;
 }
 
 .author {
@@ -222,7 +192,7 @@ General styles and blog
 }
 
 .masthead-text {
-    background-color: #445261;
+    background-color: #006400;
     color: white;
     position: relative;
 }
@@ -239,7 +209,7 @@ General styles and blog
     right: 90%;
     height: 100%;
     width: 150%;
-    background: #445261;
+    background: #006400;
     -webkit-transform: skew(15deg);
     -moz-transform: skew(15deg);
     transform: skew(15deg);
@@ -248,12 +218,12 @@ General styles and blog
 
 .post-link {
     text-decoration: none;
-    color: #445261;
+    color: #006400;
 }
 
 .post-link:hover,
 .page-link {
-    color: #E84610;
+    color: #000;
 }
 
 .post-title {
@@ -267,7 +237,7 @@ General styles and blog
 }
 
 .btn-signup {
-    background-color: #23BBBB;
+    background-color: #006400;
     color: #fff;
 }
 

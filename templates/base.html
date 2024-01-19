@@ -58,7 +58,7 @@ href="{% static 'images/favicon-16x16.png' %}">
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
                 <a class="navbar-brand" href="{% url 'home' %}">
-                    <img src="{% static 'images/diane-corriette-digital-commerce-developer.png' %}" alt="Image of Diane Corriette logo" class="logo-img">
+                    <img src="{% static 'images/diane-corriette-digital-commerce-developer.png' %}" alt="Image of Diane Corriette logo" class="img-fluid">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                     aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,11 +70,14 @@ href="{% static 'images/favicon-16x16.png' %}">
                             <a class="nav-link nav-link-custom" aria-current="page" href="{% url 'home' %}">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-link-custom" href="{% url 'blog' %}">Blog</a>
+                            <a class="nav-link nav-link-custom" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-link-custom" href="#">Contact</a>
+                            <a class="nav-link nav-link-custom" href="{% url 'blog' %}">Blog</a>
                         </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link nav-link-custom" href="#">Contact</a>
+                        </li> -->
                     </ul>
                     <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                         <form method="GET" action="#">
@@ -106,12 +109,15 @@ href="{% static 'images/favicon-16x16.png' %}">
    
 
     <!-- Footer -->
-    <footer class="footer mt-auto py-3 light-bg">
-        <p class="m-0 text-center text-black">Digital Commerce Developer <a href= "https://github.com/todiane" target="_blank">Diane Corriette</a></p>
-        <p class="m-0 text-center text-black">Follow Here: <i class="fab fa-facebook-square ms-3"></i>
-            <i class="fab fa-twitter-square ms-3"></i>
-            <i class="fab fa-instagram-square ms-3"></i>
-            <i class="fab fa-youtube-square ms-3"></i>
+    <hr>
+    <footer class="footer mt-auto mt-5 py-3 light-bg">
+        <p class="m-0 text-center text-black">Diane Corriette 
+            <a href="https://www.github.com/todiane" target="_blank" rel="noopener noreferrer nofollow"
+            class="btn btn-outline-black btn-floating m-1 text-white" role="button" aria-label="Github link">
+            <i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/todianedev" target="_blank" rel="noopener noreferrer nofollow"
+            class="btn btn-outline-black btn-floating m-1 text-white" role="button" aria-label="Linkedin link">
+            <i class="fab fa-linkedin"></i></a>
         </p>
     </footer>
 
