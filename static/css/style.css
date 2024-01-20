@@ -20,7 +20,9 @@ p {
 /*.......................................... Image & Text Logo */
 
 .logo-img {
-  max-height: 100px;
+    max-width: 8vw; 
+    display: block;
+    width: 100%;
 }
 
 .logo-font {
