@@ -2,17 +2,17 @@
 
 html {
   scroll-behavior: smooth;
-  height: 100%;
 }
 
 
 body {
   color: #545454;
   background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
+
 }
 
 p {
@@ -191,9 +191,7 @@ input[name='q']::placeholder {
     position: relative;
 }
 
-.footer-container {
-    flex: 1;
-}
+
 
 .image-flash {
     position: absolute;
