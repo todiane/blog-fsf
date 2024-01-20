@@ -1,0 +1,57 @@
+{% load static %}
+<!--====== PROJECT IMAGES WITH BUTTONS START ======-->
+
+<div class="gallery-images">
+    <div class="container text-center">
+        <h2>Other Projects</h2>
+    <p class="lead">I like to build my own projects as I learn new skills </p>
+        <div class="row">
+            <div class="col-lg-4 col-sm-12">
+                <div class="gallery-item" data-bs-target="#popup4" data-bs-toggle="modal">
+                    <img alt="Image 1" src="{% static 'images/ourspot500.webp' %}" class="img-fluid" alt="portfolio image our spot" />
+                    <div class="overlay">
+                       
+                        <h3>Our Spot</h3>
+                        <h3>Social Media Network</h3><a class="btn btn-outline-black" href="http://ourspot-d2a3c52401dc.herokuapp.com/" target="_blank" >Visit Here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <div class="gallery-item" data-bs-target="#popup5" data-bs-toggle="modal">
+                    <img alt="Image 1" src="{% static 'images/bootstraping500.webp' %}" class="img-fluid" alt="portfolio image bootstraping" />
+                    <div class="overlay">
+                        <h3>Bootstraping</h3>
+                        <h3>My favourite boostrap html</h3><a class="btn btn-outline-black" href="https://github.com/todiane/bootstraping" target="_blank">Visit Here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <div class="gallery-item" data-bs-target="#popup6" data-bs-toggle="modal">
+                    <img alt="Image 1" src="{% static 'images/dianecorriette-cv500.webp' %}" class="img-fluid" alt="portfolio image" />
+                    <div class="overlay">
+                        <h3>Resume</h3>
+                        <h3>An Online CV</h3><a class="btn btn-outline-black" href="https://todiane.github.io/ucd-resume/" target="_blank">Visit Here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Popup modals -->
+<div class="modal fade" id="popup4">
+    <div class="modal-dialog">
+        <div class="modal-content"><img alt="Image 1" src="{% static 'images/ourspot500.webp' %}" ></div>
+    </div>
+</div>
+<div class="modal fade" id="popup5">
+    <div class="modal-dialog">
+        <div class="modal-content"><img alt="Image 2" src="{% static 'images/bootstraping500.webp' %}"></div>
+    </div>
+</div>
+<div class="modal fade" id="popup6">
+    <div class="modal-dialog">
+        <div class="modal-content"><img alt="Image 3" src="{% static 'images/dianecorriette-cv500.webp' %}"></div>
+    </div>
+</div>
+<!--====== IMAGES WITH BUTTONS ENDS ======-->

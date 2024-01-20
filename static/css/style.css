@@ -2,11 +2,16 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
+
 
 body {
   color: #545454;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   
 }
 
@@ -17,10 +22,12 @@ p {
     
 }
 
+
+
 /*.......................................... Image & Text Logo */
 
 .logo-img {
-    max-width: 8vw; 
+    max-width: 15vw; 
     display: block;
     width: 100%;
 }
@@ -137,6 +144,20 @@ p {
   color: white;
 }
 
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
 /*.......................................... Search bar Styles */
 
 input[name='q']::placeholder {
@@ -168,6 +189,10 @@ input[name='q']::placeholder {
 
 .image-container {
     position: relative;
+}
+
+.footer-container {
+    flex: 1;
 }
 
 .image-flash {

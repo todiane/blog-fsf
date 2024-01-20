@@ -47,51 +47,52 @@ sizes="16x16"
 href="{% static 'images/favicon-16x16.png' %}">
 {% endblock %}
 
-<title>Digital Commerce Developer {% block extra_title %}{% endblock %}</title>
+<title>Diane Corriette {% block extra_title %}{% endblock %}</title>
 </head> 
 <body>
     <header class="container">
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-md navbar-light bg-white">
-                <a class="navbar-brand" href="{% url 'home' %}">
-                    <img src="{% static 'images/diane-corriette-digital-commerce-developer.png' %}" alt="Image of Diane Corriette logo" class="logo-img">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 logo-font">
-                        <li class="nav-item">
-                            <a class="nav-link nav-link-custom" aria-current="page" href="{% url 'home' %}">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-link-custom" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-link-custom" href="{% url 'blog' %}">Blog</a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link nav-link-custom" href="#">Contact</a>
-                        </li> -->
-                    </ul>
-                    <div class="col-6 col-lg-4 my-auto py-1 py-lg-0">
-                        <form method="GET" action="#">
-                            <div class="input-group w-100">
-                                <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search my site">
-                                <div class="input-group-append">
-                                    <button class="form-control btn btn-black border border-black rounded-0" type="submit">
-                                        <span class="icon">
-                                            <i class="fas fa-search"></i>
-                                        </span>
-                                    </button>
+        <div class="row gx-5">
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-md navbar-light bg-white">
+                    <a class="navbar-brand" href="{% url 'home' %}">
+                        <img src="{% static 'images/diane-corriette-digital-commerce-developer.png'%}" alt="Image of Diane Corriette logo" class="logo-img">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 logo-font">
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-custom" aria-current="page" href="{% url 'home' %}">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-custom" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-custom" href="{% url 'blog' %}">Blog</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link nav-link-custom" href="#">Contact</a>
+                            </li> -->
+                        </ul>
+                        <div class="col-6 col-lg-4 my-auto py-1 py-lg-0">
+                            <form method="GET" action="#">
+                                <div class="input-group w-100">
+                                    <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search my site">
+                                    <div class="input-group-append">
+                                        <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+                                            <span class="icon">
+                                                <i class="fas fa-search"></i>
+                                            </span>
+                                        </button>
+                                    </div>
                                 </div>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
-                </div>
-        </nav>
-        
+            </nav>
+        </div>
     </header>
     <div class="container">
         <hr class="border border-secondary-emphasis border-2 opacity-75">
@@ -102,20 +103,30 @@ href="{% static 'images/favicon-16x16.png' %}">
         {% block content %}
         <!-- Content Goes here -->
         {% endblock content %}
-   
 
     <!-- Footer -->
-    <hr>
-    <footer class="footer mt-auto mt-5 py-3 light-bg">
-        <p class="m-0 text-center text-black">Diane Corriette 
+    <div class="container mt-5 pt-5">
+        <hr class="border border-secondary-emphasis border-2 opacity-75">
+    </div>
+    <div class="footer-container">
+
+        <footer class="footer p-3 text-center position-relative">
+        <p class="lead">Copyright &copy; 2023 Diane Corriette
             <a href="https://www.github.com/todiane" target="_blank" rel="noopener noreferrer nofollow"
             class="btn btn-outline-black btn-floating m-1 text-white" role="button" aria-label="Github link">
-            <i class="fab fa-github"></i></a>
+            <i class="fab fa-github"></i>
+            </a>
             <a href="https://www.linkedin.com/in/todianedev" target="_blank" rel="noopener noreferrer nofollow"
             class="btn btn-outline-black btn-floating m-1 text-white" role="button" aria-label="Linkedin link">
-            <i class="fab fa-linkedin"></i></a>
+            <i class="fab fa-linkedin"></i>
+            </a>
         </p>
-    </footer>
+        <a href="#" class="position-relative text-end p-5" id="toTop">
+            <i class="fa-solid fa-arrow-up align-right" style="color: #006400;"></i>
+        </a>
+        </footer>
+    </div>
+</div>
 
     {% block corejs %}
     <script src="https://kit.fontawesome.com/cd7af72a7a.js" crossorigin="anonymous"></script>
