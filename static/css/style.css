@@ -26,19 +26,6 @@ a {
 }
 
 
-
-/*.......................................... Image & Text Logo */
-
-.logo-font {
-    text-transform: uppercase;
-    font: 24px;
-}
-
-.main-logo-link {
-    width: fit-content;
-}
-
-
 /*.......................................... Navigation bar */
 
 
@@ -47,16 +34,6 @@ a {
 .nav-link-custom.active {
     color: #000;
     background: #f8f9fa; /* Light gray shade */
-}
-
-
-
-
-/*.......................................... Top slider */
-
-.slider {
-    padding: 2%;
-    
 }
 
 
