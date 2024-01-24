@@ -29,11 +29,6 @@ a {
 
 /*.......................................... Image & Text Logo */
 
-.logo-img {
-    max-width: 15vw; 
-    display: block;
-    width: 100%;
-}
 
 .logo-font {
     text-transform: uppercase;
@@ -47,11 +42,15 @@ a {
 
 /*.......................................... Navigation bar */
 
+
+
 .nav-link-custom:hover,
 .nav-link-custom.active {
-    background: #006400;
     color: white;
+    background: #f8f9fa; /* Light gray shade */
 }
+
+
 
 
 /*.......................................... Top slider */
