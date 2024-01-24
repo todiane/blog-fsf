@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock page_header %}
+
+{% block content %}
+<!--Contact us page content-->
+<div class="overlay"></div>
+<div class="container my-5 col-10">
+    <div class="row mb-3">
+        <div class="col-12 col-md-6 mt-3">
+            <h1 class="logo-font my-4">Contact Me</h1>
+        </div>
+        <p class="pl-4">If you are looking for a short-term web developer or you want to hire me for a longer term project, please fill out the form below and I will get back to you as soon as possible.
+        </p>
+    </div>
+    <!-- displays the form for users-->
+    <form action="{% url 'contact' %}" method="post">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button class="btn btn-black rounded-0 my-5" type="submit" id="form-submit">Send Message</button>
+    </form>
+</div>
+
+
+{% endblock content %}

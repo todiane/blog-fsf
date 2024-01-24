@@ -11,9 +11,11 @@
                         <li class="nav-item">
                             <a class="nav-link nav-link-custom" href="#about">About</a>
                         </li>
+                        <hr class="border border-secondary-emphasis border-2 opacity-75">
                         <li class="nav-item">
                             <a class="nav-link nav-link-custom" href="#portfolio">Portfolio</a>
                         </li>
+                        <hr class="border border-secondary-emphasis border-2 opacity-75">
                         <li class="nav-item">
                             <a class="nav-link nav-link-custom" href="#services">Services</a>
                         </li>
@@ -32,8 +34,8 @@
                 </div>
             </section>
             <p class="roles ext-success text-uppercase text-center fs-1" style="color: #006400;">
-                <span>Full Stack Web Developer | </span>
-                <span>WordPress</span>
+                <span>Full Stack | WordPress</span>
+                <span>Web Developer</span>
               </p>
             <!-- About Section -->
             <section id="about">
@@ -46,7 +48,7 @@
                     </div>
                     <div class="col-md-6">
                         <!-- image of poster palace -->
-                        <a href="http://posterpalace-a7414f135cf3.herokuapp.com/" target="_blank">
+                        <a class="btn btn-outline-black py-3" href="http://posterpalace-a7414f135cf3.herokuapp.com/" target="_blank">
                         <img src="{% static 'images/posterpalace500.webp' %}" class="img-fluid" alt="poster palace web developer"/></a>
                     </div>
                 </div>
@@ -87,13 +89,16 @@
                     <span>Services </span>
                   </p>
                 <div class="content">    
-                    <p>Leveraging my extensive experience, I now contribute to the development of diverse projects, including social networks, e-learning platforms, and eCommerce stores. For eCommerce stores I recommend Shopify for convenience, ease of use and getting started in the world of online shopping.</p>
+                    <p>Need help for a few hours, a day or two or even a week? My flexible working pattern means I can work freelance as well as building for myself and clients.
+                        I have a reputation for getting the work done, on time and to a high standard. Click the contact me button to get in touch.
+                    </p>
                 </div>
                 <!-- Your contact form code goes here -->
                 <form>
                     <!-- Form fields go here -->
                 </form>
             </section>
+            {% include "home/services.html" %}
         </div>
     </div>
 </div>

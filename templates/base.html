@@ -58,7 +58,7 @@ href="{% static 'images/favicon-16x16.png' %}">
             <!-- Navigation -->
             <nav class="navbar d-flex gap-3 navbar-expand-md navbar-light bg-white">
                     <a class="navbar-brand" href="{% url 'home' %}">
-                        <h1 class="logo-font text-success px-3 my-3"><strong>Diane</strong> Corriette</h1>
+                        <p class="logo-font fs-1 px-3 my-3" style="color: #006400;"><strong>Diane</strong> Corriette</p>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,9 +75,9 @@ href="{% static 'images/favicon-16x16.png' %}">
                             <li class="nav-item">
                                 <a class="nav-link nav-link-custom" href="{% url 'blog' %}">Blog</a>
                             </li>
-                            <!-- <li class="nav-item">
-                                <a class="nav-link nav-link-custom" href="#">Contact</a>
-                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-custom" href="{% url 'contact' %}">Contact</a>
+                            </li>
                         </ul>
                         <div class="col-6 col-lg-4 my-auto py-1 py-lg-0">
                             <form method="GET" action="#">
