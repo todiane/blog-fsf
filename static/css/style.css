@@ -1,5 +1,6 @@
 /*.......................................... General Styles */
 
+
 html {
   scroll-behavior: smooth;
 }
@@ -8,9 +9,7 @@ html {
 body {
   color: #545454;
   background-color: #fff;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
+  font-family: "Open sans", sans-serif;
   line-height: 1.6;
 
 }
@@ -20,6 +19,10 @@ p {
     font-size: 20px;
     color:  #545454
     
+}
+
+a {
+    color: #006400;
 }
 
 
@@ -34,7 +37,7 @@ p {
 
 .logo-font {
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .main-logo-link {
@@ -297,6 +300,4 @@ input[name='q']::placeholder {
 }
 
 
-/* .header-container {
-        padding-top: 100px;
-    } */
+

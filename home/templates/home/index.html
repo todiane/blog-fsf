@@ -1,59 +1,100 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 {% load static %}
-
-{% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
-{% endblock %}
-
 {% block content %}
-
-<!--====== INTRO DIGITAL COMMERCE STARTS ======-->
-
- <!-- Learn Sections -->
- <section id="learn" class="p-3">
-    <div class="container">
-      <div class="row align-items-center justify-content-between">
-        <div class="col-lg">
-    <img src="{% static 'images/showcase.svg' %}" class="img-fluid" alt="image of woman and laptop" />
+<div class="container">
+    <div class="row">
+        <!-- Left Sidebar -->
+        <div class="col-md-3 col-lg-2 fixed-sidebar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav flex-column logo-font">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <div class="col-lg p-3">
-          <h1>Web Developer</h1>
-          <p class="lead">Building eCommerce and WordPress websites</p>
-          <p>
-            <p>I've been actively involved in web development since 2009, initially working with WordPress to create websites for both personal and client projects. In 2015, I took a significant step forward by expanding my expertise into digital marketing, honing my skills in areas such as SEO and online promotion. In more recent years, I've transitioned into a full-stack software developer role, with a particular focus on eCommerce solutions. 
-          </p>
 
+        <!-- Main Content -->
+        <div class="col-md-9 col-lg-10">
+            <!-- Home Section -->
+            <section id="home">
+                <div class="jumbotron">
+                    <!-- image of index page -->
+                    <img src="{% static 'images/webdeveloper-homepage.webp' %}" class="img-fluid mb-5" alt="diane corriette web developer" />
+                </div>
+            </section>
+            <p class="roles ext-success text-uppercase text-center fs-1" style="color: #006400;">
+                <span>Full Stack Web Developer | </span>
+                <span>WordPress</span>
+              </p>
+            <!-- About Section -->
+            <section id="about">
+                <div class="row">
+                    <div class="col-md-6 my-5">
+                        <p>I've been actively involved in web development since 2009, initially working with WordPress to create websites for both personal and client projects.</p>
+                        <P> In 2015, I took a significant step forward by expanding my expertise into digital marketing, honing my skills in areas such as SEO and online promotion. </P> 
+                        <p>In more recent years, I've transitioned into a full-stack software developer role, with a particular focus on eCommerce solutions. </p>
+                        <p>Leveraging my extensive experience, I now contribute to the development of diverse projects, including social networks, e-learning platforms, and eCommerce stores.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <!-- image of poster palace -->
+                        <a class="btn btn-outline-black py-3" href="http://posterpalace-a7414f135cf3.herokuapp.com/" target="_blank">
+                        <img src="{% static 'images/posterpalace500.webp' %}" class="img-fluid" alt="poster palace web developer"/></a>
+                    </div>
+                </div>
+            </section>
+            {% include "home/options.html" %}
+            <!-- Portfolio Section -->
+            <section id="portfolio">
+                <div class="row">
+                    <p class="roles ext-success text-uppercase text-center mt-5 fs-1" style="color: #006400;">
+                        <span>Portfolio </span>
+                      </p>
+                    <div class="col-md-6 my-5">
+                        <!-- image of stream english -->
+                        <a class="btn btn-outline-black py-3" href="https://streamenglish.co.uk" target="_blank">
+                        <img src="{% static 'images/6.png' %}" class="img-fluid" alt="stream english example from web developer"/></a>
+                    </div>
+                    <div class="col-md-6 my-5">
+                        <!-- image of pen and i publishing -->
+                        <a class="btn btn-outline-black py-3" href="https://penandi-c4b324047655.herokuapp.com/" target="_blank">
+                        <img src="{% static 'images/penandi500.webp' %}" class="img-fluid" alt="pen and i publishing web developer"/></a>
+                    </div>
+                    <div class="col-md-6 my-5">
+                        <!-- image of decor&daydream -->
+                        <a class="btn btn-outline-black py-3" href="https://decordaydreams.co/" target="_blank">
+                        <img src="{% static 'images/decor500.webp' %}" class="img-fluid" alt="decor daydreams web developer"/></a>
+                    </div>
+                    <div class="col-md-6 my-5">
+                        <!-- image of our spot -->
+                        <a class="btn btn-outline-black py-3" href="http://ourspot-d2a3c52401dc.herokuapp.com/" target="_blank">
+                        <img src="{% static 'images/ourspot500.webp' %}" class="img-fluid" alt="our spot web developer"/></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section id="services">
+                <p class="roles ext-success text-uppercase text-center fs-1" style="color: #006400;">
+                    <span>Services </span>
+                  </p>
+                <div class="content">    
+                    <p>Leveraging my extensive experience, I now contribute to the development of diverse projects, including social networks, e-learning platforms, and eCommerce stores. For eCommerce stores I recommend Shopify for convenience, ease of use and getting started in the world of online shopping.</p>
+                </div>
+                <!-- Your contact form code goes here -->
+                <form>
+                    <!-- Form fields go here -->
+                </form>
+            </section>
         </div>
-      </div>
-    </div>
-</section>
-<!--====== INTRO DIGITAL COMMERCE ENDS ======-->
-{% include "home/project-boxes.html" %}
-<!--====== INTRO PART START ======-->
-<div class="container mt-3">
-    <div class="content">    
-        <p>Leveraging my extensive experience, I now contribute to the development of diverse projects, including social networks, e-learning platforms, and eCommerce stores. For eCommerce stores I recommend Shopify for convenience, ease of use and getting started in the world of online shopping.</p>
     </div>
 </div>
-<!--====== INTRO PART ENDS ======-->
-
-
-{% include "home/options.html" %}
-
-<!--====== INTRO PART START ======-->
-<div class="container mt-3">
-  <div class="content">    
-      <p>This journey has not only deepened my technical capabilities but also allowed me to seamlessly integrate digital marketing strategies into my development work.
-        While I mainly work on websites that earn me an income (either through the product or by selling them) I do sometimes take on small projects/work. If you think
-        I can help you <a href="https://www.linkedin.com/in/todianedev" target="_blank" rel="noopener noreferrer nofollow"> contact me via LinkedIn</a></p>
-  </div>
-</div>
-<!--====== INTRO PART ENDS ======-->
-
-{% include "home/project2-boxes.html" %}
-
-{%endblock%}
+{% endblock %}

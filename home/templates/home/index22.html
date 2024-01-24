@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+
+<!--====== INTRO DIGITAL COMMERCE STARTS ======-->
+
+ <!-- Learn Sections -->
+ <section id="learn" class="p-3">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-lg px-3 pt-3">
+          <img src="{% static 'images/3.png' %}" class="img-fluid" alt="diane corriette web developer" />
+        </div>
+        <div class="col-lg p-4">
+          <p class="roles ext-success text-uppercase fs-4" style="color: #006400;">
+            <span>Full Stack Web Developer | </span>
+            <span>WordPress</span>
+          </p>
+          <p class="display-4">Building eCommerce & WordPress Websites</p>
+          <p>
+            I've been actively involved in web development since 2009, initially working with WordPress to create websites for both personal and client projects.<P> In 2015, I took a significant step forward by expanding my expertise into digital marketing, honing my skills in areas such as SEO and online promotion. </P> In more recent years, I've transitioned into a full-stack software developer role, with a particular focus on eCommerce solutions. 
+          </p>
+
+        </div>
+      </div>
+    </div>
+</section>
+<!--====== INTRO DIGITAL COMMERCE ENDS ======-->
+{% include "home/project-boxes.html" %}
+<!--====== INTRO PART START ======-->
+<div class="container mt-3">
+    <div class="content">    
+        <p>Leveraging my extensive experience, I now contribute to the development of diverse projects, including social networks, e-learning platforms, and eCommerce stores. For eCommerce stores I recommend Shopify for convenience, ease of use and getting started in the world of online shopping.</p>
+    </div>
+</div>
+<!--====== INTRO PART ENDS ======-->
+
+
+{% include "home/options.html" %}
+
+<!--====== INTRO PART START ======-->
+<div class="container mt-3">
+  <div class="content">    
+      <p>This journey has not only deepened my technical capabilities but also allowed me to seamlessly integrate digital marketing strategies into my development work.
+        While I mainly work on websites that earn me an income (either through the product or by selling them) I do sometimes take on small projects/work. If you think
+        I can help you <a href="https://www.linkedin.com/in/todianedev" target="_blank" rel="noopener noreferrer nofollow"> contact me via LinkedIn</a></p>
+  </div>
+</div>
+<!--====== INTRO PART ENDS ======-->
+
+{% include "home/project2-boxes.html" %}
+
+{%endblock%}
