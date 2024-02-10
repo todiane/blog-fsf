@@ -19,5 +19,6 @@ application = get_wsgi_application()
 # Wrap the Django application with Whitenoise
 application = WhiteNoise(application)
 
-
+# Set the root directory for collecting static files
+application.add_files(os.path.join(os.path.dirname(__file__), "todianedev/static"))
 
