@@ -39,13 +39,13 @@ CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
 CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 ALLOWED_HOSTS = ['8000-todiane-blogfsf-b5rl4u0nh1s.ws-eu107.gitpod.io',
-                 'blog-fsf-1e72c6955bdf.herokuapp.com']
+                 'dianecorriette.onrender.com']
 
 # CSRF_TRUSTED
 
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-todiane-blogfsf-b5rl4u0nh1s.ws-eu107.gitpod.io/',
-    'https://blog-fsf-1e72c6955bdf.herokuapp.com/',
+    'https://dianecorriette.onrender.com/',
 ]
 
 # Application definition
