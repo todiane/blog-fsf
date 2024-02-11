@@ -1,6 +1,5 @@
 services:
   - type: web
-    name: todianedev
     buildCommand: ./build.sh
     startCommand: gunicorn todianedev.wsgi --bind 0.0.0.0:$PORT
     env:
@@ -8,7 +7,7 @@ services:
         value: "todianedev.settings"
     healthCheckPath: "/"
 
-  - name: worker
+  - type: worker
     buildCommand: pip install -r requirements.txt
     startCommand: celery -A todianedev worker --loglevel=INFO
 
