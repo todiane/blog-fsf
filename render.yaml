@@ -1,0 +1,18 @@
+services:
+  - name: web
+    buildCommand: |
+      pip install -r requirements.txt
+      python manage.py collectstatic --noinput
+      python manage.py migrate
+    startCommand: gunicorn todianedev.wsgi --bind 0.0.0.0:$PORT
+    env:
+      - key: DJANGO_SETTINGS_MODULE
+        value: "todianedev.settings"
+    healthCheckPath: "/"
+
+  - name: worker
+    buildCommand: pip install -r requirements.txt
+    startCommand: celery -A todianedev worker --loglevel=INFO
+
+build:
+  dockerfile: Dockerfile
