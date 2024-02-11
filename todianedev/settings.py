@@ -40,14 +40,18 @@ CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 ALLOWED_HOSTS = ['8000-todiane-blogfsf-b5rl4u0nh1s.ws-eu107.gitpod.io',
                  'dianecorriette.onrender.com',
-                 'todiane.dev']
+                 'todiane.dev',]
+
+
+RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')if RENDER_EXTERNAL_HOSTNAME:    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
+
 
 # CSRF_TRUSTED
 
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-todiane-blogfsf-b5rl4u0nh1s.ws-eu107.gitpod.io/',
     'https://dianecorriette.onrender.com/',
-    'https://todiane.dev'
+    'https://todiane.dev/'
 ]
 
 # Application definition
