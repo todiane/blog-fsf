@@ -2,7 +2,7 @@ services:
   - type: web
     name: web-service
     buildCommand: ./build.sh
-    startCommand: gunicorn todianedev.wsgi:application
+    startCommand: gunicorn todianedev.wsgi --bind 0.0.0.0:$PORT
     runtime: python
     healthCheckPath: "/"
 
