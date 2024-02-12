@@ -2,9 +2,6 @@ services:
   - type: web
     buildCommand: ./build.sh
     startCommand: gunicorn todianedev.wsgi:application
-    env:
-      - key: DATABASE_URL
-        value: "todianedev.settings"
     healthCheckPath: "/"
 
   - type: worker
