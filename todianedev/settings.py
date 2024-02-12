@@ -38,7 +38,7 @@ CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
 
 CRISPY_TEMPLATE_PACK = "bootstrap4"
 
-ALLOWED_HOSTS = ['8000-todiane-blogfsf-b5rl4u0nh1s.ws-eu107.gitpod.io',
+ALLOWED_HOSTS = ['8000-todiane-blogfsf-b5rl4u0nh1s.ws-eu108.gitpod.io',
                  'dianecorriette.onrender.com',
                  'todiane.dev',]
 
@@ -46,10 +46,14 @@ ALLOWED_HOSTS = ['8000-todiane-blogfsf-b5rl4u0nh1s.ws-eu107.gitpod.io',
 # CSRF_TRUSTED
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-todiane-blogfsf-b5rl4u0nh1s.ws-eu107.gitpod.io/',
+    'https://8000-todiane-blogfsf-b5rl4u0nh1s.ws-eu108.gitpod.io/',
     'https://dianecorriette.onrender.com/',
     'https://todiane.dev/'
 ]
+
+
+# SITE ID
+SITE_ID = 1
 
 # Application definition
 
