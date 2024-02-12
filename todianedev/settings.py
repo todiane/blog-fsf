@@ -43,9 +43,6 @@ ALLOWED_HOSTS = ['8000-todiane-blogfsf-b5rl4u0nh1s.ws-eu107.gitpod.io',
                  'todiane.dev',]
 
 
-RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')if RENDER_EXTERNAL_HOSTNAME:    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
-
-
 # CSRF_TRUSTED
 
 CSRF_TRUSTED_ORIGINS = [
