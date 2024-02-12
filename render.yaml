@@ -1,9 +1,9 @@
 services:
   - type: web
     buildCommand: ./build.sh
-    startCommand: gunicorn todianedev.wsgi --bind 0.0.0.0:$PORT
+    startCommand: gunicorn todianedev.wsgi:application
     env:
-      - key: DJANGO_SETTINGS_MODULE
+      - key: DATABASE_URL
         value: "todianedev.settings"
     healthCheckPath: "/"
 
@@ -11,5 +11,3 @@ services:
     buildCommand: pip install -r requirements.txt
     startCommand: celery -A todianedev worker --loglevel=INFO
 
-build:
-  dockerfile: Dockerfile
