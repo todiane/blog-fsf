@@ -1,10 +1,13 @@
 services:
   - type: web
+    name: web-service
     buildCommand: ./build.sh
     startCommand: gunicorn todianedev.wsgi:application
+    runtime: python
     healthCheckPath: "/"
 
   - type: worker
+    name: worker-service
     buildCommand: pip install -r requirements.txt
     startCommand: celery -A todianedev worker --loglevel=INFO
-
+    runtime: python
