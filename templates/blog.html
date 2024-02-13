@@ -13,7 +13,7 @@
                 {% if "placeholder" in post.featured_image.url %}
                 <img
                   class="card-img-top"
-                  src="https://res.cloudinary.com/dka7n7ady/image/upload/v1695389398/ofiry9dfwvscld1zjg6a.png"
+                  src="https://res-console.cloudinary.com/dka7n7ady/thumbnails/v1/image/upload/v1707817915/dG90a3M0b3Vkam13bGY3aTM2czk=/grid_landscape"
                 />
                 {% else %}
                 <img
@@ -22,15 +22,15 @@
                 />
                 {% endif %}
                 <div class="image-flash">
-                  <p class="author">Author: {{ post.author }}</p>
+                  <!-- <p class="author">Author: {{ post.author }}</p> -->
                 </div>
               </div>
               <a href="{% url 'post_detail' post.slug  %}" class="post-link">
-                <h2 class="card-title">{{ post.title }}</h2>
+                <h3 class="card-title">{{ post.title }}</h3>
                 <p class="card-text">{{ post.excerpt }}</p>
               </a>
               <hr />
-              <p class="card-text text-muted h6">{{ post.created_on}}</p>
+              <!-- <p class="card-text text-muted h6">{{ post.created_on}}</p> -->
             </div>
           </div>
         </div>
