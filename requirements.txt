@@ -14,9 +14,6 @@ gunicorn==21.2.0
 installer==0.7.0
 msgpack==1.0.7
 platformdirs==3.11.0
-poetry==1.7.1
-poetry-core==1.8.1
-poetry-plugin-export==1.6.0
 psycopg2==2.9.9
 psycopg2-binary==2.9.7
 pyproject_hooks==1.0.0
