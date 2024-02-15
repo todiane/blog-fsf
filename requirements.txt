@@ -1,4 +1,5 @@
 asgiref==3.7.2
+Brotli==1.1.0
 build==1.0.3
 CacheControl==0.13.1
 cleo==2.1.0
@@ -14,6 +15,8 @@ gunicorn==21.2.0
 installer==0.7.0
 msgpack==1.0.7
 platformdirs==3.11.0
+poetry-core==1.8.1
+poetry-plugin-export==1.6.0
 psycopg2==2.9.9
 psycopg2-binary==2.9.7
 pyproject_hooks==1.0.0
