@@ -1,12 +1,14 @@
-![SnarkVerse Header](images/snarkheader.png)
 
-## Snark Verse
 
-A blog platform created using Django and Bootstrap.
+## Personal Website
 
-The site is deployed with Heroku. Live link is
+This blog platform was created in September 2023 as part of my full-stack developer training.
 
-<https://blog-fsf-1e72c6955bdf.herokuapp.com/>
+In February 2024 I decided to add a homepage to it and turn it into my personal website with a blog.
+
+The site was created using Django and Bootstrap and is deployed with Heroku. Live link is
+
+<https://blog-fsf-c7d23044ef57.herokuapp.com/>
 
 Images are hosted at Cloudinary
 
